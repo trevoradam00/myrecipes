@@ -2,6 +2,8 @@ $navbar-default-bg: #482b10;
 $light-orange: #ff8c00;
 $navbar-default-color: $light-orange;
 
+
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
@@ -73,3 +75,8 @@ h2 {
 .gravatar {
   border-radius: 10px;
 }
+
+.quiet {
+  color: #999999;
+}
+
