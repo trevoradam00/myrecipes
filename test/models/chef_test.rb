@@ -42,7 +42,7 @@ class ChefTest < ActiveSupport::TestCase
     assert_not dup_chef.valid?
   end
   
-  test "email validation should accept calid addresses" do
+  test "email validation should accept valid addresses" do
     valid_addresses = %w[user@eee.com R_TDD-DS@eee.hello.org first.last@eem.ju first+last@mnd.cr]    
                     # &w[] separates parameters into an array
     valid_addresses.each do |va|
