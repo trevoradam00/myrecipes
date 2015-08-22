@@ -1,11 +1,59 @@
-$navbar-default-bg: #482b10;
-$light-orange: #ff8c00;
-$navbar-default-color: $light-orange;
-
-
+$navbar-default-bg: #7C8569; /*#c7c1ba; 482b10*/
+/*$light-orange: #ff8c00;
+$navbar-default-color: $light-orange;*/
+$btn-primary-bg: #DE733E;
+$btn-success-bg: #A4AB80;
+$btn-success-color: #fff;
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+
+a.text_link:link {color: #EB9C4D;}
+a.text_link:hover {color: #EB9C4D;}
+a.text_link:active {color: #EB9C4D;}
+a.text_link:visited {color: #EB9C4D;}
+
+
+.btn-success.raised {
+  box-shadow: 0 3px 0 0 #868c69;
+  border: 1px solid #868c69;
+}
+
+.btn-success.hover {
+  border: 1px solid #868c69;
+}
+	
+.btn-success.raised:active, .btn-success.raised.active {
+  box-shadow: none;
+  margin-bottom: -3px;
+  margin-top: 3px;
+  border: 1px solid #868c69;
+}
+
+/*.dark_green_btn {
+  background-color: #ECF3E3;
+  color: #000;
+  letter-spacing: 1px;
+  border-top: #dff2e0 1px solid;
+  border-left: #dff2e0 1px solid;
+  border-bottom: #90b292 1px solid;
+  border-right: #90b292 1px solid;
+}*/
+
+/*.dark_green_btn:hover {
+  background-color: #E3EECC;
+  border-top: #90b292 1px solid;
+  border-left: #90b292 1px solid;
+  border-bottom: #d1e8d0 1px solid;
+  border-right: #d1e8d0 1px solid;
+  color: #666;
+}*/
+
+
+body {
+  background-color: #fff;
+}
 
 #logo {
   margin-top: 10px;
@@ -18,6 +66,8 @@ $navbar-default-color: $light-orange;
   letter-spacing: -1px;
   padding-top: 9px;
   font-weight: bold;
+  background-color: #DE733E;
+  border: 0px;
 }
 
 #logo:hover {
@@ -26,7 +76,7 @@ $navbar-default-color: $light-orange;
 }
 
 body {
-  padding-top: 95px;
+  padding-top: 110px;
 }
 
 .nav_item {
@@ -34,6 +84,7 @@ body {
   float: left;
   margin-top: 20px;
 }
+
 
 .center {
   text-align: center;
@@ -64,7 +115,8 @@ h2 {
 }
 
 .footer {
-  margin-top: 25px;
+  margin-top: 35px;
+  padding-top: 15px;
   border-top: 1px solid #eaeaea;
 }
 
@@ -79,4 +131,33 @@ h2 {
 .quiet {
   color: #999999;
 }
+
+.lower_nav {
+  float: left;
+}
+
+.next_nav {
+  margin-left: 15px;
+}
+
+.right {
+  float: right;
+}
+
+.well {
+  background-color: #ededed;
+}
+
+input, textarea, select, .uneditable-input {
+  border: 1px solid #d2d2d2;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+input {
+  height: auto !important;
+}
+
+
 
