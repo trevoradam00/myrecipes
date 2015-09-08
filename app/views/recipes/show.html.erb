@@ -17,9 +17,20 @@
       <%= image_tag(@recipe.picture.url, class: "gravatar") if @recipe.picture? %>
     </div>
     
-    <div class="well" style="margin-top:25px">
+    <div class="well relative" style="margin-top:25px">
       <p><strong>Steps:</strong></p>
       <%= simple_format(@recipe.description) %>
+      <div class="like-wrapper orange">
+          <%= link_to like_recipe_path(@recipe, like: true), method: :post do %>
+            <i class="glyphicon glyphicon-thumbs-up orange"></i>
+          <% end %>
+          &nbsp;<%= @recipe.thumbs_up_total %></span>
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <%= link_to like_recipe_path(@recipe, like: false), method: :post do %>
+            <i class="glyphicon glyphicon-thumbs-down orange"></i>
+          <% end %>
+          &nbsp;<%= @recipe.thumbs_down_total %>
+      </div>
     </div>
   </div>
 
